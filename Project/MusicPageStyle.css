@@ -9,14 +9,14 @@
 .content {
 	max-width: 1300px;
 	margin: auto;
-	padding:0 30px;
+	padding:8px;
 }
 .logo {
 	margin-left: 80px;
 }
 .logo img {
-	margin-top: -25px;
-	width: 90px;
+	margin-top: -24px;
+	width: 75px;
 }
 .vertical-line{
         display: inline-block;
@@ -72,20 +72,11 @@
 }
 
 .main1 {
-	text-align: center;
-	color:white;
-	background: url("orange.jpg") no-repeat; 
+	background: #DF660D; 
 	background-size: cover;
-  	background-position: center;
   	height: 100vh;
-  	background-attachment: fixed;
 }
-.premium-content {
-	position: absolute;
-	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
-}
+
 .icon {
 	font-size: 20px;
 	cursor: pointer;

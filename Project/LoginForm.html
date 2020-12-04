@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LoginFormStyle.css">
+	<title>Login - Music</title>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<img src="musiclogoLogin.jpg">
+		<hr id = "hr0">
+
+		</div>
+	</div>
+
+	<div class="main">
+		<h3>To continue, log in to Music.</h3>
+		<form>
+		<div class="input-container email">
+			<label for ="email">Email address or username</label>
+			<input id ="email" type="email" name="email" placeholder="Email address or username">
+		</div>
+		<div class="input-container password">
+			<label for ="password">Password</label>
+			<input id ="password" type="password" name="password" placeholder="Password">
+			<i class="far fa-eye-slash"></i>
+		</div>
+		<p><a href="#">Forgot your password?</a></p><br>
+		<button class="login-btn" type="submit">Log in</button>
+	</form>
+	</div>
+	<hr id = "hr1">
+	<div class = "noaccount">
+		<h3>Don't have an acconut?</h3>
+	</div>
+	<button onclick="location.href = '' "class="signup-btn" type="submit">Sign up for music</button>
+	<p></p>
+</body>
+</html>

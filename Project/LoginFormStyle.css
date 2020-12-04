@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+	width: 100%;
+	height: 290px;
+}
+.logo img {
+	width: 90px;
+	height:90px;
+	display: block;
+  	margin-left: auto;
+ 	margin-right: auto;
+ 	margin-top: 25px;
+}
+
+a {
+	text-decoration:underline;
+	color:#626567;
+	font-size: 14px;	
+}
+p {
+	margin-bottom: 50px;
+	text-align: left;
+}
+#hr0 { 
+  display: block;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 0.8px;
+} 
+#hr1 { 
+  display: block;
+  margin-top: 175px;
+  margin-left: 537px;
+  margin-right: 475px;
+  border-style: inset;
+  border-width: 0.8px;
+} 
+
+.main h3 {
+	margin-right: 540px;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	justify-content: center;
+	margin-left: 535px;
+	color:black;
+	text-align: center;
+
+}
+.main form {
+	width: 330px;
+	margin-top: 78px;
+}
+
+form input[type="email"],
+form input[type="password"] {
+	display: block;
+	width: 440px;
+	box-sizing: border-box;
+	border-radius: 2.5px;
+	border:1px solid #c4c4c4;
+	padding: 0.8em;
+	margin-bottom: 1.15rem;
+	font-size: 0.900rem;
+
+}
+
+label{
+	display: block;
+	margin-bottom: 3px;
+	font-size: 16px;
+	font-weight: 600;
+	color:black;
+	text-align: left;
+}
+.login-btn {
+
+	width: 430px;
+	color: white;
+	background: #196F3D;
+	font-weight: 500;
+	border:none;
+	border-radius: 55px;
+	padding:1rem;
+	font-size: 1.0rem;
+	text-transform: uppercase;
+	outline: none;
+	cursor: pointer;
+}
+.login-btn:hover {background-color: #3e8e41}
+
+.noaccount {
+	width:100%;
+}
+
+.noaccount h3 {
+	font-size:16px;
+	font-weight: 600;
+	margin-top: 30px;
+	margin-left:652px;
+}
+
+.signup-btn {
+	width: 430px;
+	background:white;
+	font-weight: 500;
+	border:1.5px solid #c4c4c4;
+	border-radius: 55px;
+	padding:1rem;
+	font-size: 1.0rem;
+	text-transform: uppercase;
+	outline: none;
+	cursor: pointer;
+	margin-top: 20px;
+	margin-left: 535px;
+}
+.signup-btn:hover {background-color: lightgrey}
+
+
+
+
+
+
+
