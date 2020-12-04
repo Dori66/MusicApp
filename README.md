@@ -1,3 +1,5 @@
+INSTRUCTIONS FOR THE PROJECT#
+
 Pjesa e parë e projektit duhet të përmbajë:
 
 1.Webfaqja të ketë minimum 3 pages si p.sh: Faqen kryesore(Home/Dashboard), About us, Products, News, Contact us, Page qe përmban (detajet e produktit, lajmit, ofertes, etj.)
@@ -15,3 +17,4 @@ Sqarim:Perdorimi i librarive te Javascript si p.sh jQuery,Validate.js etj ne val
 Keto kerkesa vlejne per projektet me asistentin Arber Kadriu.
 Dorëzimi duhet të bëhet deri më 20.12.2020 ne ora 23:59.
 
+S
