@@ -16,33 +16,36 @@
     </div>
         <div class="container-signup">
             <div class="wrap-signup">
-                <form class="signup-form">
+                <form class="signup-form" action="MusicPage.html" method="post" onsubmit="return validate();">
                     <span class="signup-form-title">Sign up to start listening</span>
                     <div class="wrap-input">
                         <span class="lable-input">What's your email?</span>
-                        <input class="input" type="text" name="email" placeholder="Enter your email.">
+                        <input id = "email" class="input" type="email" name="email" placeholder="Enter your email.">
+                        <span class="focus-input"></span>
+                    </div>
+                    <div class="error_msg" id = "em_err_msg"></div>
+                    
+                    <div class="wrap-input">
+                        <span class="lable-input">Create a password</span>
+                        <input id = "password" class="input" type="password" name="password" placeholder="Create a password.">
+                        <span class="focus-input"></span>
+                        
+                    </div>
+                <div class="error_msg" id="pw_err_msg"></div>
+                    <div class="wrap-input">
+                        <span class="lable-input">Confirm password</span>
+                        <input id = "confirmPassword" class="input" type="password" name="password" placeholder="Confirm password.">
                         <span class="focus-input"></span>
                        
                     </div>
-                    <div class="error_msg" id = "em_err_msg">ALLO</div>
-                    <div class="wrap-input">
-                        <span class="lable-input">Create a password</span>
-                        <input class="input" type="password" name="password" placeholder="Create a password.">
-                        <span class="focus-input"></span>
-                        <div class="error_msg" id="pw_err_msg"></div>
-                    </div>
-                    <div class="wrap-input">
-                        <span class="lable-input">Confirm password</span>
-                        <input class="input" type="password" name="password" placeholder="Confirm password.">
-                        <span class="focus-input"></span>
-                        <div class="error_msg" id="cpw_err_msg"></div>
-                    </div>
+                     <div class="error_msg" id="cpw_err_msg"></div>
                     <div class="wrap-input">
                         <span class="lable-input">What should we call you?</span>
-                        <input class="input" type="text" name="name" placeholder="Enter a profile name.">
+                        <input id = "name" class="input" type="text" name="name" placeholder="Enter a profile name.">
                         <span class="focus-input"></span>
-                        <div class="error_msg" id="nm_err_msg"></div>
+                        
                     </div>
+                    <div class="error_msg" id="nm_err_msg"></div>
                     <section class="copy legal">
                         <p><span class="small">By continuing, you agree to accept our <br><a href="#">Privacy Policy</a> &amp; <a href="#">Terms of service</a>.</span></p>
                     </section>
@@ -56,9 +59,8 @@
                     </div>
                    
                 </form>
-
             </div>
-            </form>
+            
         </div>
         <script>
             function error_message(id, message) {
@@ -68,49 +70,57 @@
             function validate() {
                 var email = document.getElementById("email");
                 var password = document.getElementById("password");
-                var confirmPassword = document.getElementById("Confim Password");
-                var name = document.getElementById("Profile Name");
+                var confirmPassword = document.getElementById("confirmPassword");
+                var name = document.getElementById("name");
     
                 var emailvalue = email.value;
                 var passwordvalue = password.value;
-                var confirmPassword = confirmPassword.value;
-                var name = name.value;
+                var confirmPasswordvalue = confirmPassword.value;
+                var namevalue = name.value;
     
                 if (emailvalue== "") {
-                    email.style.border = "1px solid #ff8471";
                     error_message("em_err_msg", "Please enter email address.");
-                }else if (emailvalue != "") {
-                    email.style.border = "1px solid #7b5be4";
+                }
+                else if (emailvalue != "") {
                     error_message("em_err_msg", "");
                 }
-                if (passwordvalue== "") {
-                    password.style.border = "1px solid #ff8471";
+                if (passwordvalue == "") {
                     error_message("pw_err_msg", "Please enter your password.");
-                } else if (passwordvalue.length < 6){
-                    password.style.border = "1px solid #ff8471";
-                    error_message("pw_err_msg", "Please enter a valid password!");
-                }if(confirmPassword ==""){
-                    confirmPassword.style.border = "1px solid #ff8471";
+                }
+                else if (passwordvalue.length < 6){
+                    error_message("pw_err_msg", "Please enter a valid password(at least 6 characters)!");
+                } 
+                else if (passwordvalue.length >= 6){
+                    error_message("pw_err_msg", "");
+                }
+                if(confirmPasswordvalue ==""){
                     error_message("cpw_err_msg", "Please confirm your password!");
-                }else if(confirmPassword != password){
-                    confirmPassword.style.border = "1px solid #ff8471";
-                    error_message("cpw_err_msg", "The password doesnt match!");
-                }else if(confirmPassword != ""){
-                    confirmPassword.style.border = "1px solid #7b5be4";
+                }
+                else {
                     error_message("cpw_err_msg", "");
-                }if(name == ""){
-                    name.style.border = "1px solid #ff8471";
+                }
+                if (passwordvalue != "" && confirmPasswordvalue != ""){
+
+                if (passwordvalue != confirmPasswordvalue) {
+                    error_message("pw_err_msg", "Password doesn't match!");
+                    error_message("cpw_err_msg", "Password doesn't match!");
+                } else {
+                    error_message("pw_err_msg", "");
+                    error_message("cpw_err_msg", "");
+                }
+            }
+
+                if(namevalue == ""){
                     error_message("nm_err_msg", "Please enter your username.");
-                }else if(name != ""){
-                    name.style.border = "1px solid #7b5be4";
+                }
+                else if(namevalue != ""){
                     error_message("nm_err_msg", "");
                 }
                 else {
-                    password.style.border = "1px solid #7b5be4";
                     error_message("pw_err_msg", "");
                 }
     
-                if (emailvalue == "" || passwordvalue == "" || passwordvalue.length < 6 || confirmPassword =="" || confirmPassword != password || name == "") {
+                if (emailvalue == "" || passwordvalue == "" || passwordvalue.length < 6 || confirmPasswordvalue == "" || namevalue == "") {
                     return false;
                     }
                 else {
