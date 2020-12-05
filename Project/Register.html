@@ -5,50 +5,53 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="RegisterStyle.css">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
+    <div class="header">
+        <div class="logo">
+           <a href="MusicPage.html"><img src="musiclogoLogin.jpg"></a>
+        <hr id = "hr0">
+
+        </div>
+    </div>
         <div class="container-signup">
-            <div class="signup-more"></div>
             <div class="wrap-signup">
                 <form class="signup-form">
-                    <span class="signup-form-title">Sign Up</span>
-
+                    <span class="signup-form-title">Sign up to start listening</span>
                     <div class="wrap-input">
-                        <span class="lable-input">Full Name</span>
-                        <input class="input" type="text" name="name" placeholder="Name...">
+                        <span class="lable-input">What's your email?</span>
+                        <input class="input" type="text" name="email" placeholder="Enter your email.">
                         <span class="focus-input"></span>
                     </div>
                     <div class="wrap-input">
-                        <span class="lable-input">Email</span>
-                        <input class="input" type="text" name="email" placeholder="Email Address">
+                        <span class="lable-input">Create a password</span>
+                        <input class="input" type="password" name="password" placeholder="Create a password.">
                         <span class="focus-input"></span>
                     </div>
                     <div class="wrap-input">
-                        <span class="lable-input">UserName</span>
-                        <input class="input" type="text" name="name" placeholder="UserName...">
+                        <span class="lable-input">Confirm password</span>
+                        <input class="input" type="password" name="password" placeholder="Confirm password.">
                         <span class="focus-input"></span>
                     </div>
                     <div class="wrap-input">
-                        <span class="lable-input">Password</span>
-                        <input class="input" type="password" name="pass" placeholder="**********">
+                        <span class="lable-input">What should we call you?</span>
+                        <input class="input" type="text" name="name" placeholder="Enter a profile name.">
                         <span class="focus-input"></span>
                     </div>
-                    <div class="wrap-input">
-                        <span class="lable-input">Repeat Password</span>
-                        <input class="input" type="password" name="repeat-pass" placeholder="**********">
-                        <span class="focus-input"></span>
-                    </div>
+                    <section class="copy legal">
+                        <p><span class="small">By continuing, you agree to accept our <br><a href="#">Privacy Policy</a> &amp; <a href="#">Terms of service</a>.</span></p>
+                    </section>
                    <div class="container-signup-form-btn">
                        <div class="wrap-signup-form-btn">
                            <button class="signup-form-btn">Sign Up</button>
                        </div>
-                       <a class="login-button hov1" href="#">
-                           Sign in <i class="fa fa-sign-in"></i>
-                       </a>
-                   </div>
+                    </div>
+                    <div class="login">
+                        <p>Have an account? <a id ="loginform"href="LoginForm.html">Log in.</a></p>
+                    </div>
+                   
                 </form>
+
             </div>
         </div>
     </body>

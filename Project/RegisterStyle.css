@@ -1,9 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Poppins',  sans-serif;
+    font-family:'Poppins', sans-serif;
 }
+h6 {
+    margin-bottom:22px;
+    margin-left: 70px;
+}
+.header {
+    width: 100%;
+    height: 100px;
+}
+.logo img {
+    width: 90px;
+    height:90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+#hr0 { 
+  display: block;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 0.8px;
+} 
 input,textarea{
     outline: none;
     border: none;
@@ -32,21 +58,14 @@ textarea::-webkit-input-placeholder{color: #ccc;}
 .container-signup{
     width: 100%;
     display: flex;
-}
-.signup-more{
-    width: calc(100% - 520%);
-    position: relative;
-    background-image: url(music.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    margin-left:470px;
 }
 
 .wrap-signup{
-    width: 520px;
+    width: 570px;
     min-height: 100vh;
     background: #fff;
-    border-radius: 2px;
+    border-radius: 1.5px;
     position: relative;
     padding: 72px 50px 0px 50px;
 }
@@ -59,9 +78,9 @@ textarea::-webkit-input-placeholder{color: #ccc;}
 .signup-form-title{
     display: block;
     width: 100%;
-    font-size: 39px;
+    font-size: 30px;
     font-weight: 900;
-    color: #333333;
+    color: black;
     line-height: 1.2;
     text-align: left;
     padding-bottom: 50px;
@@ -69,13 +88,13 @@ textarea::-webkit-input-placeholder{color: #ccc;}
 .wrap-input{
     width: 100%;
     position: relative;
-    border-bottom: 2px solid #dbdbdb;
-    margin-bottom: 45px;
+    border-bottom: 1.5px solid #dbdbdb;
+    margin-bottom: 47px;
 }
 .lable-input{
-    font-size: 18px;
+    font-size: 16.8px;
     font-weight: 600;
-    color: #999999;
+    color: black;
     line-height: 1.2;
     padding-left: 2px;
 }
@@ -84,7 +103,7 @@ textarea::-webkit-input-placeholder{color: #ccc;}
     width: 100%;
     height: 50px;
     background: transparent;
-    font-size: 22px;
+    font-size: 17px;
     color: #555;
     line-height: 1.2;
     padding:0 2px;
@@ -134,16 +153,26 @@ textarea::-webkit-input-placeholder{color: #ccc;}
     padding-bottom: 10px;
 }
 .signup-form-btn{
-    width: 245%;
+    width: 370%;
     height: 50px;
     padding: 10px 30px;
-    background: #685860;
-    border-radius: 25px;
+    background: #196F3D;
+    border-radius: 28px;
     font-size: 16px;
     color: #fff;
+    margin-top: 20px;
+
 }
-.login-button{
-    font-size: 18px;
-    color: #666;
-    text-decoration: none;
+.signup-form-btn:hover{
+    background-color: #3e8e41
+}
+
+
+.login {
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+.login a {
+    text-decoration: underline;
 }
