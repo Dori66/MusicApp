@@ -74,6 +74,7 @@ textarea::-webkit-input-placeholder{color: #ccc;}
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 30px;
 }
 .signup-form-title{
     display: block;
@@ -175,4 +176,10 @@ textarea::-webkit-input-placeholder{color: #ccc;}
 }
 .login a {
     text-decoration: underline;
+}
+.error_msg {
+	text-align:left;
+	font-size: 13px;
+	color:#ff8471;
+
 }

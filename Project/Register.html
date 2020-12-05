@@ -22,21 +22,26 @@
                         <span class="lable-input">What's your email?</span>
                         <input class="input" type="text" name="email" placeholder="Enter your email.">
                         <span class="focus-input"></span>
+                       
                     </div>
+                    <div class="error_msg" id = "em_err_msg">ALLO</div>
                     <div class="wrap-input">
                         <span class="lable-input">Create a password</span>
                         <input class="input" type="password" name="password" placeholder="Create a password.">
                         <span class="focus-input"></span>
+                        <div class="error_msg" id="pw_err_msg"></div>
                     </div>
                     <div class="wrap-input">
                         <span class="lable-input">Confirm password</span>
                         <input class="input" type="password" name="password" placeholder="Confirm password.">
                         <span class="focus-input"></span>
+                        <div class="error_msg" id="cpw_err_msg"></div>
                     </div>
                     <div class="wrap-input">
                         <span class="lable-input">What should we call you?</span>
                         <input class="input" type="text" name="name" placeholder="Enter a profile name.">
                         <span class="focus-input"></span>
+                        <div class="error_msg" id="nm_err_msg"></div>
                     </div>
                     <section class="copy legal">
                         <p><span class="small">By continuing, you agree to accept our <br><a href="#">Privacy Policy</a> &amp; <a href="#">Terms of service</a>.</span></p>
@@ -53,6 +58,65 @@
                 </form>
 
             </div>
+            </form>
         </div>
+        <script>
+            function error_message(id, message) {
+                document.getElementById(id).innerText = message;
+            }
+    
+            function validate() {
+                var email = document.getElementById("email");
+                var password = document.getElementById("password");
+                var confirmPassword = document.getElementById("Confim Password");
+                var name = document.getElementById("Profile Name");
+    
+                var emailvalue = email.value;
+                var passwordvalue = password.value;
+                var confirmPassword = confirmPassword.value;
+                var name = name.value;
+    
+                if (emailvalue== "") {
+                    email.style.border = "1px solid #ff8471";
+                    error_message("em_err_msg", "Please enter email address.");
+                }else if (emailvalue != "") {
+                    email.style.border = "1px solid #7b5be4";
+                    error_message("em_err_msg", "");
+                }
+                if (passwordvalue== "") {
+                    password.style.border = "1px solid #ff8471";
+                    error_message("pw_err_msg", "Please enter your password.");
+                } else if (passwordvalue.length < 6){
+                    password.style.border = "1px solid #ff8471";
+                    error_message("pw_err_msg", "Please enter a valid password!");
+                }if(confirmPassword ==""){
+                    confirmPassword.style.border = "1px solid #ff8471";
+                    error_message("cpw_err_msg", "Please confirm your password!");
+                }else if(confirmPassword != password){
+                    confirmPassword.style.border = "1px solid #ff8471";
+                    error_message("cpw_err_msg", "The password doesnt match!");
+                }else if(confirmPassword != ""){
+                    confirmPassword.style.border = "1px solid #7b5be4";
+                    error_message("cpw_err_msg", "");
+                }if(name == ""){
+                    name.style.border = "1px solid #ff8471";
+                    error_message("nm_err_msg", "Please enter your username.");
+                }else if(name != ""){
+                    name.style.border = "1px solid #7b5be4";
+                    error_message("nm_err_msg", "");
+                }
+                else {
+                    password.style.border = "1px solid #7b5be4";
+                    error_message("pw_err_msg", "");
+                }
+    
+                if (emailvalue == "" || passwordvalue == "" || passwordvalue.length < 6 || confirmPassword =="" || confirmPassword != password || name == "") {
+                    return false;
+                    }
+                else {
+                    return true;
+                    }
+                }
+        </script>
     </body>
-</html>
+ </html>
