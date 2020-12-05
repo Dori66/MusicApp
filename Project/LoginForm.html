@@ -17,15 +17,18 @@
 
 	<div class="main">
 		<h3>To continue, log in to Music.</h3>
-		<form>
+		<form action="MusicPage.html" method="post" onsubmit="return validate();">
 		<div class="input-container email">
 			<label for ="email">Email address or username</label>
 			<input id ="email" type="email" name="email" placeholder="Email address or username">
+			<div class="error_msg" id = "em_err_msg">
+			</div>
 		</div>
 		<div class="input-container password">
 			<label for ="password">Password</label>
 			<input id ="password" type="password" name="password" placeholder="Password">
-			<i class="far fa-eye-slash"></i>
+			<div class="error_msg" id = "pw_err_msg">
+			</div>
 		</div>
 		<p><a href="#">Forgot your password?</a></p><br>
 		<button class="login-btn" type="submit">Log in</button>
@@ -37,5 +40,46 @@
 	</div>
 	<a id = "specific" href="Register.html"><button class="signup-btn" type="submit">Sign up for music</button></a>
 	<p></p>
+
+	<script>
+		function error_message(id, message) {
+			document.getElementById(id).innerText = message;
+		}
+
+		function validate() {
+			var email = document.getElementById("email");
+			var password = document.getElementById("password");
+
+			var emailvalue = email.value;
+			var passwordvalue = password.value;
+
+			if (emailvalue== "") {
+				email.style.border = "1px solid #ff8471";
+				error_message("em_err_msg", "Please enter your username or email address.");
+			}else if (emailvalue != "") {
+				email.style.border = "1px solid #7b5be4";
+				error_message("em_err_msg", "");
+			}
+			if (passwordvalue== "") {
+				password.style.border = "1px solid #ff8471";
+				error_message("pw_err_msg", "Please enter your password.");
+			} else if (passwordvalue.length < 6){
+				password.style.border = "1px solid #ff8471";
+				error_message("pw_err_msg", "Please enter a valid password!");
+			} else {
+				password.style.border = "1px solid #7b5be4";
+				error_message("pw_err_msg", "");
+			}
+
+			if (emailvalue == "" || passwordvalue == "" || passwordvalue.length < 6) {
+				return false;
+				}
+			else {
+				return true;
+				}
+			}
+			
+		
+	</script>
 </body>
 </html>

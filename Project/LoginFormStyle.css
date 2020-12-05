@@ -6,10 +6,10 @@
   font-family: 'Poppins', sans-serif;
 }
 #specific {
-	
+
 }
 
-.header {
+.header {q
 	width: 100%;
 	height: 290px;
 }
@@ -30,7 +30,7 @@ a {
 }
 
 p {
-	margin-bottom: 50px;
+	margin-bottom: 60px;
 	text-align: left;
 	text-decoration: underline;
 }
@@ -46,8 +46,8 @@ p {
 #hr1 { 
   display: block;
   margin-top: 175px;
-  margin-left: 537px;
-  margin-right: 475px;
+  margin-left: 523px;
+  margin-right: 482px;
   border-style: inset;
   border-width: 0.8px;
 } 
@@ -79,7 +79,6 @@ form input[type="password"] {
 	border-radius: 2.5px;
 	border:1px solid #c4c4c4;
 	padding: 0.8em;
-	margin-bottom: 1.15rem;
 	font-size: 0.900rem;
 
 }
@@ -121,7 +120,7 @@ label{
 }
 
 .signup-btn {
-	width: 430px;
+	width: 443px;
 	background:white;
 	font-weight: 500;
 	border:1.5px solid #c4c4c4;
@@ -132,11 +131,17 @@ label{
 	outline: none;
 	cursor: pointer;
 	margin-top: 20px;
-	margin-left: 535px;
+	margin-left: 523px;
 }
 .signup-btn:hover {background-color: lightgrey}
 
 
+.error_msg {
+	text-align:left;
+	font-size: 13px;
+	color:#ff8471;
+	padding-top: 15px;
+}
 
 
 
