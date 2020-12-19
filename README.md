@@ -1,1 +1,1 @@
-HomePage to Go
+Responsive left !
