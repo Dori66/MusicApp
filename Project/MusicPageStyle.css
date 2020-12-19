@@ -71,10 +71,62 @@
 	color: #00A805;	
 }
 
-.main1 {
+/* .main1 {
 	background: #DF660D; 
 	background-size: cover;
   	height: 100vh;
+} */
+.main1{
+	position: absolute;
+	top:160px;
+	left: 38%;
+}
+.marshmello_img{
+	height:550px;
+}
+.hd{
+	position: absolute;
+	color: #00d4ff;
+	top: 240px;
+	left: 40px;
+	font-size: 45px;
+	font-family: fantasy;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+}
+.text{
+	position: absolute;
+	top: 320px;
+	left: 40px;
+	color: #ececec;
+	font-size: 25px;
+	letter-spacing: 0.03em;
+}
+.JOIN{
+	position: absolute;
+	top: 455px;
+	left: 40px;
+	text-decoration: none;
+	padding: 15px 30px;
+	font-weight: 600;
+	font-size: 20px;
+	border: 1px solid #00d4ff;
+	border-radius: 25px;
+	transition: 0.5s;
+	transition-property: background;
+	color: #00d4ff;
+}
+.JOIN:hover{
+	background:#00d4ff;
+	color: #fff;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	overflow: hidden;
+	position: relative;
+	background: rgb(2,0,36);
 }
 
 .icon {
