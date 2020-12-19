@@ -79,7 +79,7 @@
                 var namevalue = name.value;
     
                 if (emailvalue== "") {
-                    error_message("em_err_msg", "Please enter email address.");
+                    error_message("em_err_msg", "Please enter your email address.");
                 }
                 else if (emailvalue != "") {
                     error_message("em_err_msg", "");
@@ -102,8 +102,8 @@
                 if (passwordvalue != "" && confirmPasswordvalue != ""){
 
                 if (passwordvalue != confirmPasswordvalue) {
-                    error_message("pw_err_msg", "Password doesn't match!");
-                    error_message("cpw_err_msg", "Password doesn't match!");
+                    error_message("pw_err_msg", "Passwords don't match!");
+                    error_message("cpw_err_msg", "Passwords don't match!");
                 } else {
                     error_message("pw_err_msg", "");
                     error_message("cpw_err_msg", "");
@@ -111,7 +111,7 @@
             }
 
                 if(namevalue == ""){
-                    error_message("nm_err_msg", "Please enter your username.");
+                    error_message("nm_err_msg", "Please enter your name.");
                 }
                 else if(namevalue != ""){
                     error_message("nm_err_msg", "");

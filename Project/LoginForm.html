@@ -20,7 +20,7 @@
 		<form action="MusicPage.html" method="post" onsubmit="return validate();">
 		<div class="input-container email">
 			<label for ="email">Email address or username</label>
-			<input id ="email" type="email" name="email" placeholder="Email address or username">
+			<input id ="email" type="email" name="email" placeholder="Email address">
 			<div class="error_msg" id = "em_err_msg">
 			</div>
 		</div>
@@ -55,7 +55,7 @@
 
 			if (emailvalue== "") {
 				email.style.border = "1px solid #ff8471";
-				error_message("em_err_msg", "Please enter your username or email address.");
+				error_message("em_err_msg", "Please enter your email address.");
 			}else if (emailvalue != "") {
 				email.style.border = "1px solid #7b5be4";
 				error_message("em_err_msg", "");

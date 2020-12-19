@@ -3,15 +3,17 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="MusicPageStyle.css">
+    <link rel="stylesheet" href="PremiumPageStyle.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-	<title>Music | Listening is everything</title>
+	<title>Music Premium | Listening is everything</title>
 </head>
 <body>
+	<div class="mainbackground">
+	<div class="navscroll">
 	<nav class="navbar">
 		<div class="content">
 			<div class="logo">
-				<a href="MusicPage.html"><img src="musiclogo.jpg"></a>
+				<a href="MusicPage.html"><img src="musiclogopremium.jpg"></a>
 			</div>
 			<ul class="menu">
 				<div class="icon cancel-btn">
@@ -27,7 +29,7 @@
 				<i class="fas fa-bars" style="color:white"></i>
 			</div> 
 	</nav>
-
+</div>
 	<div class="main1">
 		<div class="card">
 			<div class="imgBx">
@@ -42,12 +44,9 @@
 			<br>
 			<a href="LoginForm.html"><button class="premiumbtn" type="submit">Get premium</button></a>
 		</div>
-
 	</div>
-	<div class="main2">
-		
 	</div>
-	<div class ="footer">
+<div class ="footer">
 		<div class="footer-left">
 			<a href="MusicPage.html"><img src="musiclogo.jpg"></a>
 			<div class="footer-links">
@@ -63,7 +62,7 @@
 		<div class="footer-center">
 			<div>
 				<i class="fa fa-location-arrow"></i>
-				<p><span>Agim Ramadani -</span> Pristina, Kosovo</p>
+				<p><span>Agim Ramadani</span> Pristina, Kosovo</p>
 			</div>
 			<div>
 				<i class="fa fa-mobile"></i>
@@ -78,7 +77,7 @@
 		<div class="footer-right">
 		</div>
 	</div>
-	<script>
+		<script>
 		const menu = document.querySelector(".menu");
 		const menuBtn = document.querySelector(".menu-btn");
 		const cancelBtn = document.querySelector(".cancel-btn");
@@ -90,7 +89,16 @@
 			menu.classList.remove("active");
 			menuBtn.classList.remove("hide");
 		}
+	window.onscroll = function() {
+	  var currentScrollPos = window.pageYOffset;
 
+
+	  if (currentScrollPos > 100) {
+	    document.getElementsByClassName("navscroll")[0].style.display = "none";
+	  } else {
+	    document.getElementsByClassName("navscroll")[0].style.display = "initial";
+	  }
+	}
 	</script>
 </body>
 </html>
