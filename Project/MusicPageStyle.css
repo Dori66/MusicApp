@@ -5,7 +5,13 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
+.About-content{
+	height:50vh;
+	width: 300vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
 .content {
 	max-width: 1300px;
 	margin: auto;
@@ -164,6 +170,14 @@
 	font-size: 25px;
 	letter-spacing: 0.03em;
 }
+/* .text-About{
+	position: absolute;
+	top: 220px;
+	left: 900px;
+	color: rgba(255, 51, 0, 0)
+	font-size: 22px;
+	letter-spacing: 0.03em;
+} */
 .JOIN{
 	position: absolute;
 	top: 455px;
