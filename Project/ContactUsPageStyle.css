@@ -5,13 +5,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-.About-content{
-	height:50vh;
-	width: 300vh;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
+
 .content {
 	max-width: 1300px;
 	margin: auto;
@@ -79,123 +73,101 @@
 	color: #00A805;	
 }
 
-.main1 {
-	background: url("premiumbackground.jpg"); 
-	background-size: cover;
-  	height:100vh;
-  	display: flex;
-  	justify-content: space-around;
-  	align-items: center;
-}
-.main1 .card {
-	position: relative;
-	max-width: 1000px;
-	margin:100px 0  0 50px ;
-	display: flex;
+
+.contact {
+	height: 100vh;
+	max-width: 700px;
+	margin: 0px auto;
+	box-sizing: border-box;
+	padding: 40px;
 }
 
-.main1 img {
-	width: 440px;
-	height: 440px;
-	border-radius: 2px;
-}
-
-.textcontent {
-	
-	line-height: 2.2;
-	margin-bottom: 20px;
-}
-.textcontent h6{
-	font-size: 14px;
-}
-
-.textcontent h2{
-	font-size: 50px;
-}
-.textcontent h5{
-	font-size: 17px;
-	font-weight: normal;
-}
-
-.premiumbtn {
-
-	width: 250px;
+h1 {
+	text-align: center;
+	text-transform: uppercase;
 	color: black;
-	background: white;
-	font-weight: 530;
+	margin-top: 100px;
+	font-size: 30px;
+}
+
+.form{
+	display: flex;
+	align-items: center;
+	margin-top: 17%;
+	flex-direction: column;
+
+}
+
+.input-form {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 55px;
+	width: 100%;
+
+}
+.imsg {
+	width: 100%;
+	margin-bottom: 20px;
+
+}
+
+.input > input {
+	border: none;
+	border-bottom: 2px solid lightseagreen;
+	color:black;
+	width:250px;
+	padding: 10px 20px;
+	outline: none;
+	background: transparent;
+}  
+
+.input > input:focus {
+	padding: 10px 10px 10px 10px;
+	outline: none;
+	border-color: lightseagreen;
+	transition: 0.5s;
+}
+
+.msg textarea{
+	width: 500px;
+	border: none;
+	padding: 10px 20px;
+	outline: none;
+	height: 85px;
+	background: transparent;
+	border-bottom: 2px solid lightseagreen;
+	color: black;
+	box-decoration-break: none;
+
+}
+
+
+.msg textarea:focus {
+	padding: 10px 10px 10px 10px;
+	outline:none;
+	border-color: lightseagreen;
+	transition: 0.5s; 
+}
+
+
+.btn {
+
+	width: 280px;
+	color: white;
+	background: black;
+	font-weight: 500;
 	border:none;
 	border-radius: 55px;
 	padding:1rem;
-	font-size: 1.1rem;
+	font-size: 1.0rem;
 	text-transform: uppercase;
 	outline: none;
 	cursor: pointer;
 	margin-top:-100px;
 }
-.premiumbtn:hover {background-color: #DEEBF3}
+.btn:hover {background-color: lightseagreen}
 
 
-#main2{
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	position: relative;
-	background: rgb(2,0,36);
-	height: 100vh;
-}
-.image {
-	position: absolute;
-	top:160px;
-	left: 38%;
-}
-.marshmello_img{
-	height:400px;
-	margin-left: 230px;
-}
-.hd{
-	position: absolute;
-	color: #00d4ff;
-	top: 240px;
-	left: 100px;
-	font-size: 45px;
-	text-transform: uppercase;
-	font-weight: 580;
-}
-.text{
-	text-decoration: none;
-	position: absolute;
-	top: 320px;
-	left: 100px;
-	color: #ececec;
-	font-size: 20px;
-}
-/* .text-About{
-	position: absolute;
-	top: 220px;
-	left: 900px;
-	color: rgba(255, 51, 0, 0)
-	font-size: 22px;
-	letter-spacing: 0.03em;
-} */
-.JOIN{
-	position: absolute;
-	top: 455px;
-	left: 100px;
-	text-decoration: none;
-	padding: 15px 55px;
-	font-weight: 600;
-	font-size: 20px;
-	border: 1px solid #00d4ff;
-	border-radius: 38px;
-	transition: 0.5s;
-	transition-property: background;
-	color: #00d4ff;
-	cursor: pointer;
-}
-.JOIN:hover{
-	background:#00d4ff;
-	color: #fff;
-}
 
 .icon {
 	font-size: 20px;
@@ -209,6 +181,11 @@
 }
 
 
+.icon.menu-btn {
+	position: absolute;
+	right: 28px;
+	top:40px;
+}
 .footer {
 	background:#000000;
 	width: 100%;
@@ -308,7 +285,7 @@
 
 
 
-@media (max-width: 1050px) {
+@media (max-width: 900px) {
 
 	.icon {
 		display: block;
@@ -329,16 +306,15 @@
 		text-align: center;
 		transition: all 0.3s ease;
 	}
-	.logo {
-		margin-left: 10px;
-	}
 	.navbar .menu.active {
 		left: 0%;
 	}
 	.vertical-line{
 		display: none;
 	}
-
+	.logo {
+		margin-left: 10px;
+	}
 	#bigfont {
 		font-size: 38px;
 		font-weight: 700;
@@ -352,8 +328,21 @@
 		margin-top: 30px;
 	}
 
+	.input-form {
+		flex-direction: column;
+	}
+	.input:first-child > input {
+		margin-bottom: 20px;
+	}
+	.form .input > input {
+		width: 100% !important;
+	}
+
 
 }
+
+
+
 
 
 

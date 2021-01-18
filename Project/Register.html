@@ -120,7 +120,7 @@
                     error_message("pw_err_msg", "");
                 }
     
-                if (emailvalue == "" || passwordvalue == "" || passwordvalue.length < 6 || confirmPasswordvalue == "" || namevalue == "") {
+                if (emailvalue == "" || passwordvalue == "" || passwordvalue.length < 6 || confirmPasswordvalue == "" || namevalue == "" || passwordvalue != confirmPasswordvalue) {
                     return false;
                     }
                 else {

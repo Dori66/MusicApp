@@ -20,7 +20,7 @@
 					<i class="fas fa-times" style="color:white"></i>
 				</div> 
 				 <li><a id="bigfont" href="PremiumPage.html">Premium</a></li>
-				 <li><a id="bigfont" href="#">Download</a></li>
+				 <li><a id="bigfont" href="DownloadPage.html">Download</a></li>
 				 <span class="vertical-line"></span>
 				 <li><a id="medium" href="LoginForm.html">Log in</a></li>
 				 <li><a id="medium"href="Register.html">Sign up</a></li>
@@ -46,14 +46,57 @@
 		</div>
 	</div>
 	</div>
+
+<div id="slider">
+	<input type="radio" name="slider" id="slide1" checked>
+   <input type="radio" name="slider" id="slide2">
+   <input type="radio" name="slider" id="slide3">
+   <input type="radio" name="slider" id="slide4">
+   <div id="slides">
+      <div id="overflow">
+         <div class="inner">
+            <div class="slide slide_1">
+               <div class="slide-content">
+                  <h1>Why Go Premium ?</h1>
+               </div>
+            </div>
+            <div class="slide slide_2">
+               <div class="slide-content">
+               		<img src="NoAd.png">
+               		<p>No ad interruptions.</p>
+               </div>
+            </div>
+            <div class="slide slide_3">
+               <div class="slide-content">
+               		<img src="unlimskips.png">
+               		<p>Unlimited skips.</p>
+               </div>
+            </div>
+            <div class="slide slide_4">
+               <div class="slide-content">
+                	<img src="musicdown.png">
+               		<p>Music download.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="bullets">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+   </div>
+</div>
+
 <div class ="footer">
 		<div class="footer-left">
 			<a href="MusicPage.html"><img src="musiclogo.jpg"></a>
 			<div class="footer-links">
-				<a href="#" class="removecontent">Home</a>
-				<a href="#">About</a>
+				<a href="MusicPage.html" class="removecontent">Home</a>
+				<a href="AboutUs.html">About</a>
 				<a href="#">Support</a>
-				<a href="#">Contact</a>
+				<a href="ContactUsPage.html">Contact</a>
 			</div>
 			<p class="footer-name">
 				@2020 Music  
@@ -62,7 +105,7 @@
 		<div class="footer-center">
 			<div>
 				<i class="fa fa-location-arrow"></i>
-				<p><span>Agim Ramadani</span> Pristina, Kosovo</p>
+				<p><span>Agim Ramadani - </span> Pristina, Kosovo</p>
 			</div>
 			<div>
 				<i class="fa fa-mobile"></i>
@@ -70,7 +113,7 @@
 			</div>
 			<div>
 				<i class="fa fa-inbox"></i>
-				<p><a href="#">Music@gmail.com</a></p>
+				<p><a href="#">music@gmail.com</a></p>
 			</div>
 
 		</div>
@@ -93,7 +136,7 @@
 	  var currentScrollPos = window.pageYOffset;
 
 
-	  if (currentScrollPos > 100) {
+	  if (currentScrollPos > 75) {
 	    document.getElementsByClassName("navscroll")[0].style.display = "none";
 	  } else {
 	    document.getElementsByClassName("navscroll")[0].style.display = "initial";

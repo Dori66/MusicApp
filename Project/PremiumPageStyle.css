@@ -15,10 +15,10 @@
 	padding:8px;
 }
 .logo {
-	margin-left: 150px;
+	margin-left: 70px;
 }
 .logo img {
-	margin-top: -18px;
+	margin-top: -24px;
 	width: 75px;
 	border-radius: 100%;
 }
@@ -131,9 +131,101 @@
 }
 .premiumbtn:hover {background-color: #DEEBF3}
 
-.main2 {
-	height: 100vh;
-	background:lightblue;
+#slider {
+   margin: 0 auto;
+   width: 1000vh;
+   max-width: 100%;
+   text-align: center;
+}
+#slider input[type=radio] {
+   display: none;
+}
+#slider label {
+   cursor:pointer;
+   text-decoration: none;
+}
+#slides {
+   border: none;
+   /*border: 3px solid #ccc;*/
+   position: relative;
+   z-index: 1;
+}
+#overflow {
+   width: 100%;
+   overflow: hidden;
+
+}
+#slide1:checked ~ #slides .inner {
+   margin-left: 0;
+}
+#slide2:checked ~ #slides .inner {
+   margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner {
+   margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner {
+   margin-left: -300%;
+}
+#slides .inner {
+   transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   width: 400%;
+   line-height: 0;
+   height: 470px;
+}
+#slides .slide {
+   width: 25%;
+   float:left;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   color: black;
+}
+#slides .slide_1 {
+   background: white;
+}
+#slides .slide_1 h1 {
+   font-size: 50px;
+}
+
+#slides .slide_2 {
+   background: white;
+}
+
+#slides .slide_3 {
+   background: white;
+}
+#slides .slide_4 {
+   background: white;
+}
+
+.slide-content img {
+	width: 170px;
+}
+.slide-content p {
+	margin-top: 40px;
+	font-size: 20px;
+}
+
+#bullets {
+   text-align: center;
+   background:white;
+   margin-bottom: 30px;
+}
+#bullets label {
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   border-radius:100%;
+   background: #444;
+   margin: 0 12px;
+}
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+   background: #196F3D;
 }
 
 .icon {
@@ -267,6 +359,9 @@
 	}
 	.vertical-line{
 		display: none;
+	}
+	.logo {
+		margin-left: 10px;
 	}
 
 	#bigfont {

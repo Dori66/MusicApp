@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="MusicPageStyle.css">
+    <link rel="stylesheet" href="ContactUsPageStyle.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<title>Music | Listening is everything</title>
 </head>
@@ -25,40 +25,36 @@
 			</ul>
 			<div class="icon menu-btn">
 				<i class="fas fa-bars" style="color:white"></i>
-			</div> 
+			</div>
 	</nav>
-	<div id="responsive">
 
-	<div class="main1">
-		<div class="card">
-			<div class="imgBx">
-				<img src="clouds.jpg">
+
+
+<div class = "contact">
+	<h1>Contact us</h1>
+	<div class="form">
+		<div class="input-form">
+			<div class="input">
+				<input type="text" placeholder="Name">
+			</div>
+			<div class="input">
+				<input type="email" placeholder="Email">
 			</div>
 		</div>
-		<div class="textcontent">
-			<h6>MUSIC PREMIUM</h6>
-			<h2>Get Premium for</h2>
-			<h5>Ad-free music, offline listening, and more. Cancel anytime.</h5>
-			<br>
-			<br>
-			<a href="LoginForm.html"><button class="premiumbtn" type="submit">Get premium</button></a>
-		</div>
 
+	<div class="msg">
+		<div class="imsg">
+			<textarea placeholder="Message"></textarea>
+		</div>
 	</div>
-	<div id="main2">
-		<div class="image">
-			<img class = "marshmello_img" src="marshmello1.jpg" alt=""> 
-		</div>
-		<div class ="hd">
-			Feel The Music <i class="fas fa-music"></i>
-		</div>
-		<div class="text">
-			<p>Music and rhythm find their way into<br> the secret places of the soul.</p>
-		</div>
-		<a class = "JOIN"  onclick="alert('Not currently available!')">DOWNLOAD</a>
-					
-	</div>
-	<div class ="footer">
+	<br>
+	<br>
+	<a href="#"><button class="btn" type="submit">Send Message</button></a>
+</div>
+</div>
+
+
+<div class ="footer">
 		<div class="footer-left">
 			<a href="MusicPage.html"><img src="musiclogo.jpg"></a>
 			<div class="footer-links">
@@ -86,7 +82,6 @@
 			</div>
 
 		</div>
-	</div>
 </div>
 	<script>
 		const menu = document.querySelector(".menu");
@@ -102,5 +97,6 @@
 		}
 
 	</script>
+
 </body>
 </html>
