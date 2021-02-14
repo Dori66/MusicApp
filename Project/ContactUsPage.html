@@ -28,24 +28,29 @@
 			</div>
 	</nav>
 
-
+<div id="error"></div>
 
 <div class = "contact">
 	<h1>Contact us</h1>
 	<div class="form">
+		<form action="MusicPage.html" method="post" onsubmit="return check();">
 		<div class="input-form">
 			<div class="input">
-				<input type="text" placeholder="Name">
+				<input type="text" placeholder="Name" id="name" class="input">
 			</div>
-			<div class="input">
-				<input type="email" placeholder="Email">
-			</div>
-		</div>
+			<!-- <div class="error_msg" id="name_err_msg"></div> -->
 
+			<div class="input">
+				<input type="email" placeholder="Email" id="email" class="input">
+			</div>
+			
+		</div>
+		<div class="error_msg" id="email_err_msg"></div>
 	<div class="msg">
 		<div class="imsg">
 			<textarea placeholder="Message"></textarea>
 		</div>
+		</form>
 	</div>
 	<br>
 	<br>
@@ -84,19 +89,53 @@
 		</div>
 </div>
 	<script>
-		const menu = document.querySelector(".menu");
-		const menuBtn = document.querySelector(".menu-btn");
-		const cancelBtn = document.querySelector(".cancel-btn");
-		menuBtn.onclick = ()=> {
-			menu.classList.add("active")
-			menuBtn.classList.add("hide");
-		}
-		cancelBtn.onclick = ()=> {
-			menu.classList.remove("active");
-			menuBtn.classList.remove("hide");
-		}
 
-	</script>
+function error_check(id,Message){
+	document.getElementById(id).innerText = Message;
+}
+
+function check (){
+	var name = document.getElementById("name");
+	var email = document.getElementById("email");
+
+	var nameValue = name.value;
+	var emailvalue = email.value;
+
+	if(nameValue == ""){
+		error_check("name_err_msg","Please enter your name.");
+	}
+	else if(nameValue != ""){
+		error_check("name_err_msg", "");
+	}
+	if(emailvalue == ""){
+		error_check("email_err_msg","Please enter your email.");
+	}
+	else if(emailvalue != ""){
+		error_check("email_err_msg","");
+	}
+
+	if(nameValue == "" || emailvalue == ""){
+		return false;
+	}
+	else{
+		return true;
+	}
+
+}
+</script>
+
+		<!-- // const menu = document.querySelector(".menu");
+		// const menuBtn = document.querySelector(".menu-btn");
+		// const cancelBtn = document.querySelector(".cancel-btn");
+		// menuBtn.onclick = ()=> {
+		// 	menu.classList.add("active")
+		// 	menuBtn.classList.add("hide");
+		// }
+		// cancelBtn.onclick = ()=> {
+		// 	menu.classList.remove("active");
+		// 	menuBtn.classList.remove("hide");
+		// } -->
+
 
 </body>
 </html>

@@ -131,7 +131,7 @@ h1 {
 .msg textarea{
 	width: 500px;
 	border: none;
-	padding: 10px 20px;
+	padding: 100px 20px;
 	outline: none;
 	height: 85px;
 	background: transparent;
@@ -281,7 +281,13 @@ h1 {
 .footer .footer-links .removecontent:before{
 	content: none;
 }
+.error_msg {
+	/* text-align:left; */
+	font-size: 13px;
+	color:#ff8471;
+    /* margin-top:-45px; */
 
+}
 
 
 
